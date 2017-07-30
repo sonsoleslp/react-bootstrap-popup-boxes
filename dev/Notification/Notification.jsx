@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
 import {Alert} from 'react-bootstrap';
 
 export default class Notification extends Component {
@@ -11,9 +10,10 @@ export default class Notification extends Component {
     }
     render(){
         return(
-            <Alert style={this.props.style} bsStyle={this.props.bsStyle} onDismiss={this.props.onClose}>
-                {this.props.children}
-            </Alert>
+                <Alert style={this.props.style} bsStyle={this.props.bsStyle} onDismiss={this.props.onClose}>
+                    {this.props.children}
+                </Alert>
+
         );
     }
 }

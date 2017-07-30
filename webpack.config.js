@@ -8,7 +8,7 @@ const sassLoaders = [
 ];
 module.exports = {
     entry :  {
-        bundle : ['webpack-dev-server/client?http://0.0.0.0:8080', // WebpackDevServer host and port
+        bundle : ['webpack-dev-server/client?http://0.0.0.0:8081', // WebpackDevServer host and port
             'webpack/hot/only-dev-server',
            './dev/main.js'],
         vendor :['react','lodash','react-dom']
@@ -18,7 +18,7 @@ module.exports = {
         //at this directory our bundle file will be available
         //make sure port 8090 is used when launching webpack-dev-server
         path: path.join(__dirname, "dist/js/"),
-        publicPath: 'http://localhost:8080/assets/'
+        publicPath: 'http://localhost:8081/assets/'
     },
     module: {
         loaders: [
